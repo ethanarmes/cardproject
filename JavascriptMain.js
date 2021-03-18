@@ -1,3 +1,4 @@
+
 function playGame() {
     let colours = ['R', 'B', 'Y'];
     let values = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
@@ -5,6 +6,7 @@ function playGame() {
     let shuffledDeck = shuffle(deck);
     showDeck(shuffledDeck);
 }
+
 
 //Creates an array(deck) of objects(cards)
 function getDeck(colours, values) {
@@ -42,3 +44,34 @@ function showDeck(deck) {
     deckHTML = deckHTML + '</tr></table>';
     document.getElementById("deck").innerHTML = deckHTML;   //displays the deck of cards
 }
+
+function pickCards(shuffledDeck) {
+    let playerOneDeck = new Array();
+    let playerTwoDeck = new Array();
+    i = 1;
+    while (i < shuffledDeck.length)
+        if (shuffledDeck[i - 1].Suit === shuffledDeck[i].Suit) then
+    if (shuffledDeck[i - 1].Value > shuffledDeck[i].Value) then
+    playerOneDeck.push({Suit: shuffledDeck[i - 1].Suit, Value: shuffledDeck[i - 1].Value})
+    playerOneDeck.push({Suit: shuffledDeck[i].Suit, Value: shuffledDeck[i].Value})
+else
+    playerTwoDeck.push({Suit: shuffledDeck[i - 1].Suit, Value: shuffledDeck[i - 1].Value})
+    playerTwoDeck.push({Suit: shuffledDeck[i].Suit, Value: shuffledDeck[i].Value})
+    end
+    if
+        end if
+        end while
+            //There will always be a winner!
+            if (playerOneDeck.length > playerTwoDeck.length) then
+    displayDeck(“Player
+    One”,
+    playerOneDeck
+)
+else
+    displayDeck(“Player
+    Two”,
+    playerTwoDeck
+)
+    end
+    if
+        }
