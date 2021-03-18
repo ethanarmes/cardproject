@@ -3,7 +3,7 @@ function playGame() {
     let values = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
     let deck = getDeck(colours, values);
     let shuffledDeck = shuffle(deck);
-    showDeck(shuffledDeck); //test
+    showDeck(shuffledDeck);
 }
 
 //Creates an array(deck) of objects(cards)
